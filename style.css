@@ -1,0 +1,408 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: orange;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a.active {
+  color: orange;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+}
+
+.btn-header {
+  background: orange;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  background: #fff8f1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.hero-content .btn {
+  background: orange;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.hero-buttons .btn,
+.hero-buttons .btn-outline {
+  display: inline-block;
+  margin: 6px 8px 6px 0;
+}
+
+.hero-image img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid orange;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about {
+  padding: 60px;
+  text-align: center;
+  background: #fff;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.stats div {
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 30px;
+}
+
+.btn, .btn-outline {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline {
+  border: 2px solid orange;
+  color: orange;
+  background: transparent;
+}
+
+/* CTA Section */
+.cta {
+  padding: 40px;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Skills Section */
+.skills {
+  padding: 60px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill {
+  background: #eee;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Skills subheads */
+.skills-subhead {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #e67e22;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.skills-subhead:first-of-type {
+  margin-top: 0;
+}
+
+/* Experience / Projects / Education */
+.experience,
+.projects,
+.education {
+  padding: 60px;
+  background: #fff;
+}
+
+.projects {
+  background: #f8f8f8;
+}
+
+.experience h2,
+.projects h2,
+.education h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.exp-card,
+.project-card,
+.edu-card {
+  background: #fff8f1;
+  border-left: 4px solid orange;
+  border-radius: 8px;
+  padding: 25px 30px;
+  margin: 0 auto 25px;
+  max-width: 800px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.edu-card {
+  background: #fff;
+}
+
+.exp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.exp-head h3 {
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.exp-date {
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.project-stack {
+  font-size: 0.9rem;
+  color: #e67e22;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.exp-card ul,
+.project-card ul {
+  padding-left: 20px;
+}
+
+.exp-card li,
+.project-card li {
+  margin-bottom: 8px;
+}
+
+.project-card .buttons {
+  margin-top: 15px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px;
+  text-align: center;
+  background-color: #fff8f1;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.contact-info a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  padding: 30px;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+
+footer .socials a img {
+  width: 24px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+/* Contact buttons spacing */
+.contact .buttons {
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    padding: 16px 24px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 10px 0;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    padding: 12px 24px;
+    margin: 0;
+  }
+
+  .hero {
+    padding: 40px 24px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+
+  .about,
+  .skills,
+  .experience,
+  .projects,
+  .education,
+  .contact {
+    padding: 40px 24px;
+  }
+
+  .exp-card,
+  .project-card,
+  .edu-card {
+    padding: 20px;
+  }
+
+  .exp-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
